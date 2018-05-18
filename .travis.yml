@@ -6,6 +6,9 @@ language: python
 python:
     - 3.6
 
+git:
+    submodules: false
+    
 # what branches should be evaluated
 branches:
     only:
