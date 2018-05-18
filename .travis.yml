@@ -29,8 +29,7 @@ before_install:
     - git submodule update --init --recursive
     - pwd
     - cd data && python unzip.py
-    - pwd
-    - cd
+    - cd /home/travis/build/aenfield/TestSubmodule
     - pwd
 
 # list of commands to run to setup the environment
