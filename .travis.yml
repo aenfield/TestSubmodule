@@ -27,8 +27,11 @@ before_install:
     - eval "$(ssh-agent -s)"
     - ssh-add TravisDeployKey
     - git submodule update --init --recursive
+    - pwd
     - cd data && python unzip.py
+    - pwd
     - cd
+    - pwd
 
 # list of commands to run to setup the environment
 install:
