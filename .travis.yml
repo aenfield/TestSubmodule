@@ -8,6 +8,7 @@ branches:
         - master
 
 before_install:
+    - echo "In before_install"
     - openssl aes-256-cbc -K $encrypted_7eb1121a80e0_key -iv $encrypted_7eb1121a80e0_iv -in TravisDeployKey.enc -out
       TravisDeployKey -d 
     - chmod 600 TravisDeployKey
